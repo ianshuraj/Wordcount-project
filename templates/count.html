@@ -1,0 +1,18 @@
+<h1>THERE ARE {{Count}} WORDS TYPED</h1>
+
+<h4>No of times each word typed:</h4>
+{% for word, count in Worddictionary %}
+
+{{word}}--{{count}}
+<br>
+
+{% endfor %}
+
+
+<br>
+HERE IS WHAT YOU TYPED:
+<br>
+{{fulltext}}
+<br>
+<br>
+<a href="{% url "start" %}">Start Again</a>
